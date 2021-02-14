@@ -7,11 +7,11 @@ object Constants {
         val qu1 = Question(
             id = 1,
             question = "What country does this flag belong to?",
-            image = 0,
-            optionOne = "",
-            optionTwo = "",
-            optionThree = "",
-            optionFour = "",
+            image = R.drawable.ic_flag_argentina,
+            optionOne = "Argentina",
+            optionTwo = "USA",
+            optionThree = "Mexico",
+            optionFour = "China",
             correctAnswer = 0
         )
         return questionsList
