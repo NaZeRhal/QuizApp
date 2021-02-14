@@ -42,7 +42,7 @@
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:text="Welcome"
-                android:textColor="#363A43"
+                android:textColor="@color/textMain"
                 android:textSize="30sp"
                 android:textStyle="bold" />
 
@@ -51,7 +51,7 @@
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:text="Please enter your name"
-                android:textColor="#7A8089"
+                android:textColor="@color/textHint"
                 android:textSize="16sp" />
 
             <com.google.android.material.textfield.TextInputLayout
@@ -65,8 +65,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="Name"
-                    android:textColor="#363A43"
-                    android:textColorHint="#7A8089" />
+                    android:textColor="@color/textMain"
+                    android:textColorHint="@color/textHint" />
             </com.google.android.material.textfield.TextInputLayout>
 
             <Button
@@ -76,6 +76,7 @@
                 android:layout_marginTop="16dp"
                 android:background="@color/purple_700"
                 android:text="Start"
+                android:textStyle="bold"
                 android:textSize="18sp"
                 />
         </LinearLayout>
