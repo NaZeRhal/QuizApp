@@ -19,7 +19,7 @@
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
             android:gravity="center"
-            android:text="What country does this flag belong to?"
+            tools:text="What country does this flag belong to?"
             android:textColor="@color/textMain"
             android:textSize="21sp" />
 
@@ -29,7 +29,8 @@
             android:layout_height="100dp"
             android:layout_marginTop="16dp"
             android:scaleType="centerCrop"
-            android:src="@drawable/ic_flag_argentina" />
+            android:src="@drawable/ic_flag_argentina"
+            android:contentDescription="@string/flag" />
 
         <LinearLayout
             android:id="@+id/ll_progress_details"
@@ -58,7 +59,7 @@
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:padding="15dp"
-                android:text="0/10"
+                tools:text="@string/progress"
                 android:textColorHint="@color/textHint"
                 android:textSize="14sp" />
         </LinearLayout>
@@ -71,7 +72,7 @@
             android:background="@drawable/default_option_border_bg"
             android:gravity="center"
             android:padding="15dp"
-            android:text="Apple"
+            tools:text="Apple"
             android:textColorHint="@color/textHint"
             android:textSize="18sp" />
 
@@ -83,7 +84,7 @@
             android:background="@drawable/default_option_border_bg"
             android:gravity="center"
             android:padding="15dp"
-            android:text="Google"
+            tools:text="Google"
             android:textColorHint="@color/textHint"
             android:textSize="18sp" />
 
@@ -95,7 +96,7 @@
             android:background="@drawable/default_option_border_bg"
             android:gravity="center"
             android:padding="15dp"
-            android:text="Android"
+            tools:text="Android"
             android:textColorHint="@color/textHint"
             android:textSize="18sp" />
 
@@ -107,7 +108,7 @@
             android:background="@drawable/default_option_border_bg"
             android:gravity="center"
             android:padding="15dp"
-            android:text="Nokia"
+            tools:text="Nokia"
             android:textColorHint="@color/textHint"
             android:textSize="18sp" />
 
@@ -117,7 +118,7 @@
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
             android:background="@color/purple_700"
-            android:text="Submit"
+            android:text="@string/btn_submit"
             android:textColor="@android:color/white"
             android:textSize="18sp"
             android:textStyle="bold" />

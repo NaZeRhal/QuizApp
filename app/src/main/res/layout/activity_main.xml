@@ -15,7 +15,7 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="30dp"
         android:gravity="center"
-        android:text="Max Quiz"
+        android:text="@string/main_app_name"
         android:textColor="@android:color/white"
         android:textSize="30sp"
         android:textStyle="bold" />
@@ -41,7 +41,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:text="Welcome"
+                android:text="@string/welcome"
                 android:textColor="@color/textMain"
                 android:textSize="30sp"
                 android:textStyle="bold" />
@@ -50,7 +50,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:text="Please enter your name"
+                android:text="@string/please_enter_your_name"
                 android:textColor="@color/textHint"
                 android:textSize="16sp" />
 
@@ -64,7 +64,7 @@
                     android:id="@+id/et_name"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="Name"
+                    android:hint="@string/name"
                     android:textColor="@color/textMain"
                     android:textColorHint="@color/textHint" />
             </com.google.android.material.textfield.TextInputLayout>
@@ -75,7 +75,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
                 android:background="@color/purple_700"
-                android:text="Start"
+                android:text="@string/btn_start"
                 android:textStyle="bold"
                 android:textSize="18sp"
                 />

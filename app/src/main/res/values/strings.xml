@@ -1,3 +1,17 @@
 <resources>
     <string name="app_name">QuizApp</string>
+    <string name="btn_finish">FINISH</string>
+    <string name="btn_submit">SUBMIT</string>
+    <string name="btn_go_next">GO TO NEXT QUESTION</string>
+    <string name="main_app_name">Max Quiz</string>
+    <string name="welcome">Welcome</string>
+    <string name="please_enter_your_name">Please enter your name</string>
+    <string name="name">Name</string>
+    <string name="btn_start">Start</string>
+    <string name="hey_congratulations">Hey, Congratulations!</string>
+    <string name="result">Result</string>
+    <string name="trophy">trophy</string>
+    <string name="result_score">Your score is %s out of %s</string>
+    <string name="progress">%d/%d</string>
+    <string name="flag">flag</string>
 </resources>

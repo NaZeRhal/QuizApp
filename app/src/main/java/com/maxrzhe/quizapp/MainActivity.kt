@@ -14,24 +14,28 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binder = ActivityMainBinding.inflate(layoutInflater)
-        val view = binder.root
-        setContentView(view)
 
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.R) {
-            window.setDecorFitsSystemWindows(false)
-        } else {
-            window.decorView.systemUiVisibility = View.SYSTEM_UI_FLAG_FULLSCREEN
-        }
+        with(binder) {
+            setContentView(root)
 
-        binder.startButton.setOnClickListener {
-            if (binder.etName.text.toString().isEmpty()) {
-                Toast.makeText(this, "Please enter your name", Toast.LENGTH_SHORT).show()
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.R) {
+                window.setDecorFitsSystemWindows(false)
             } else {
-                val intent = Intent(this, QuizQuestionsActivity::class.java)
-                startActivity(intent)
-                finish()
+                window.decorView.systemUiVisibility = View.SYSTEM_UI_FLAG_FULLSCREEN
+            }
+
+            startButton.setOnClickListener {
+                if (etName.text.toString().isEmpty()) {
+                    Toast.makeText(this@MainActivity, getString(R.string.please_enter_your_name), Toast.LENGTH_SHORT).show()
+                } else {
+                    val intent = Intent(this@MainActivity, QuizQuestionsActivity::class.java)
+                    intent.putExtra(Constants.USER_NAME, etName.text.toString())
+                    startActivity(intent)
+                    finish()
+                }
             }
         }
+
 
     }
 }
